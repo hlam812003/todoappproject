@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23ffffff%22></rect><path d=%22M22.70 74.30L13.88 74.30L13.88 25.70L22.70 25.70L22.70 46.04L32.60 46.04L32.60 25.70L41.48 25.70L41.48 74.30L32.60 74.30L32.60 52.34L22.70 52.34L22.70 74.30ZM61.40 74.30L54.02 74.30L47.12 25.70L54.56 25.70L58.58 57.20L63.62 25.82L69.68 25.82L74.84 57.20L78.80 25.70L86.12 25.70L79.34 74.30L72.14 74.30L66.74 41.72L61.40 74.30Z%22 fill=%22%23ff0000%22></path></svg>" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TODO APP PROJECT BY HWAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="card">
+        <h1 class="todo-header"><i class="fa-solid fa-align-left"></i> TODO LIST</h1>
+        <button id="theme-settings">
+            <img src="./img/icon-sun.svg" alt="Thay đổi giao diện">
+        </button>
+    </header>
+    <main>
+        <div class="card add">
+            <div class="container">
+                <button id="add-btn">&plus;</button>
+            </div>
+            <div class="sup-container">
+                <input type="text" class="text-input" placeholder="Create new todo..." spellcheck="false" autocomplete="off" name="" id="">
+            </div>
+        </div>
+        <ul class="todos"></ul>
+        <div class="card stat">
+            <p class="corner"><span id="items-left">0</span> works left</p>
+            <div class="filter">
+                <button id="all" class="on">All</button>
+                <button id="active">Active</button>
+                <button id="completed">Completed</button>
+            </div>
+            <div class="corner">
+                <button id="clear-completed">Clear completed works</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Drag or drop to reorder your todo list - @HWAN 2022</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
